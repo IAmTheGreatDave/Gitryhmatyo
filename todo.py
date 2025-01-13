@@ -1,7 +1,23 @@
 
+def view_tasks( lista ):
+    if lista:
+        for idx,data in enumerate(lista):
+            print(f'( {idx} ) {lista[idx]}')
+    else:
+        print('Congrats. No tasks.')
+
+
 def add_task(lista):
     task = input("Give task: ")
     lista.append(task)
 
 
 
+def remove_task(lista, task_index):
+    try:
+        removed_task = lista.pop(task_index)
+        print(f"Removed task: {removed_task}")
+    except IndexError:
+        print("Invalid task index")
+    except:
+        print("Failed to remove task")
