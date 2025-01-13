@@ -13,7 +13,9 @@ def add_task(lista):
 
 
 
-def remove_task(task_index):
+
+def remove_task(lista, task_index):
+
     try:
         removed_task = lista.pop(task_index)
         print(f"Removed task: {removed_task}")
