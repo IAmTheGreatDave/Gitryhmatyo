@@ -1,7 +1,7 @@
-tasks = []
-def add_task():
+
+def add_task(lista):
     task = input("Give task: ")
-    tasks.append(task)
+    lista.append(task)
 
 add_task()
 
