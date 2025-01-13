@@ -4,3 +4,10 @@ def view_tasks( lista ):
             print(f'( {idx} ) {lista[idx]}')
     else:
         print('Congrats. No tasks.')
+
+
+def add_task(lista):
+    task = input("Give task: ")
+    lista.append(task)
+
+
